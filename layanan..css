@@ -7,10 +7,10 @@ body {
   }
   
   header {
-    background: #007bff;
-    color: white;
+    background-color: #007bff;
     padding: 1em;
-    text-align: center;
+    color: white;
+    font-size: 20px;
   }
   
   nav {
@@ -66,4 +66,190 @@ body {
     }
   }
   
+  /* Services Page Styles */
+  .layanan-container {
+    padding-top: 80px;
+    background-color: #f8f9fa;
+  }
   
+  .layanan-hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .layanan-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .layanan-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease 0.3s;
+  }
+  
+  .layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 5%;
+    margin-bottom: 4rem;
+  }
+  
+  .layanan-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .layanan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .layanan-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .layanan-card h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .layanan-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .layanan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .layanan-features li {
+    padding: 0.5rem 0;
+    color: #2c3e50;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .layanan-features li:before {
+    content: "✓";
+    color: #f1c40f;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  .layanan-contact {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+  }
+  
+  .layanan-contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .layanan-contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #whatsapp-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #whatsapp-form input,
+  #whatsapp-form select,
+  #whatsapp-form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  #whatsapp-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  #whatsapp-form button {
+    padding: 1rem 2rem;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  #whatsapp-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .layanan-hero {
+      padding: 3rem 1rem;
+    }
+    
+    .layanan-hero h2 {
+      font-size: 2rem;
+    }
+    
+    .layanan-grid {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+    
+    .layanan-contact {
+      padding: 3rem 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
