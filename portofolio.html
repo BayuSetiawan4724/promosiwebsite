@@ -3,44 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio</title>
+  <title>Portofolio - Jasa Pembuatan Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="portofolio.css" />
 </head>
 <body>
   <header>
-    <h1>Portofolio</h1>
+    <h1>Jasa Pembuatan Website Profesional</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="layanan.html">Layanan</a>
       <a href="harga.html">Harga</a>
       <a href="portofolio.html">Portofolio</a>
+      <a href="#kontak">Kontak</a>
     </nav>
   </header>
 
-  <section class="portofolio-section">
-    <h2>Proyek Kami</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="gambar1.png" alt="Toko Online" />
-        <h3>Toko Online</h3>
-        <p>Website toko online dengan sistem checkout & integrasi pembayaran.</p>
+  <main class="portofolio-container">
+    <section class="portofolio-hero">
+      <h2>Portofolio Kami</h2>
+      <p>Lihat beberapa proyek website yang telah kami kerjakan</p>
+    </section>
+
+    <section class="portofolio-filter">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="toko">Toko Online</button>
+      <button class="filter-btn" data-filter="makanan">Pemesanan Makanan</button>
+      <button class="filter-btn" data-filter="pendidikan">Pendidikan</button>
+      <button class="filter-btn" data-filter="company">Company Profile</button>
+    </section>
+
+    <section class="portofolio-grid">
+      <div class="portofolio-item" data-category="toko">
+        <div class="portofolio-image">
+          <img src="gambar1.png" alt="Toko Online">
+          <div class="portofolio-overlay">
+            <h3>Toko Online Fashion</h3>
+            <p>Website toko online dengan sistem pembayaran terintegrasi</p>
+            <a href="#" class="portofolio-btn">Lihat Detail</a>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-        <img src="gambar2.png" alt="Website Sekolah" />
-        <h3>Website Sekolah</h3>
-        <p>Website informatif dan interaktif untuk sekolah.</p>
+
+      <div class="portofolio-item" data-category="pendidikan">
+        <div class="portofolio-image">
+          <img src="gambar2.png" alt="Website Pendidikan">
+          <div class="portofolio-overlay">
+            <h3>Platform E-Learning</h3>
+            <p>Sistem pembelajaran online dengan fitur lengkap</p>
+            <a href="pendidikan" class="portofolio-btn">Lihat Detail</a>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-        <img src="gambar3.png" alt="Company Profile" />
-        <h3>Company Profile</h3>
-        <p>Tampilan profesional untuk memperkenalkan bisnis Anda.</p>
+
+      <div class="portofolio-item" data-category="toko">
+        <div class="portofolio-image">
+          <img src="gambar3.png" alt="Toko Online">
+          <div class="portofolio-overlay">
+            <h3>Toko Online Elektronik</h3>
+            <p>Website toko online dengan fitur katalog produk</p>
+            <a href="#" class="portofolio-btn">Lihat Detail</a>
+          </div>
+        </div>
       </div>
-      <!-- Tambah lagi jika perlu -->
-    </div>
-  </section>
+    </section>
+
+    <section class="portofolio-testimonial">
+      <h2>Testimoni Klien</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Website yang dibuat sangat profesional dan membantu meningkatkan penjualan kami secara signifikan."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+            <div>
+              <h4>Bayu Setiawan</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Tim sangat profesional dan responsif. Hasil website melebihi ekspektasi kami."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+            <div>
+              <h4>Raden Ahmad</h4>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Tim sangat profesional dan responsif. Hasil website melebihi ekspektasi kami."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+            <div>
+              <h4>Muhammad Lutfi</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Proses pengerjaan cepat dan hasilnya sangat memuaskan. Sangat direkomendasikan!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Client">
+            <div>
+              <h4>Andi Syeril</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="portofolio-contact">
+      <h2>Siap Memulai Proyek Anda?</h2>
+      <p>Hubungi kami sekarang untuk konsultasi gratis</p>
+      <form id="whatsapp-form">
+        <input type="text" id="nama" placeholder="Nama" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="pesan" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Jasa Pembuatan Website. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
