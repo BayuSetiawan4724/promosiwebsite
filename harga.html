@@ -3,59 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paket Harga</title>
+  <title>Harga - Jasa Pembuatan Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="harga.css" />
 </head>
 <body>
   <header>
-    <h1>Paket Harga</h1>
+    <h1>Jasa Pembuatan Website Profesional</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="layanan.html">Layanan</a>
-      <a href="portofolio.html">Portofolio</a>
       <a href="harga.html">Harga</a>
-      <a href="index.html#kontak">Kontak</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="#kontak">Kontak</a>
     </nav>
   </header>
 
-  <section>
-    <h2>Pilih Paket Sesuai Kebutuhanmu</h2>
-    <div class="pricing-table">
-      <div class="pricing-card">
-        <h3>Paket Basic</h3>
-        <p class="price">Rp 500.000</p>
-        <ul>
-          <li>1 Halaman Landing Page</li>
-          <li>Responsif & Mobile Friendly</li>
-          <li>Gratis Domain 1 Tahun</li>
+  <main class="harga-container">
+    <section class="harga-hero">
+      <h2>Paket Harga</h2>
+      <p>Pilih paket yang sesuai dengan kebutuhan bisnis Anda</p>
+    </section>
+
+    <section class="harga-grid">
+      <div class="harga-card">
+        <div class="harga-header">
+          <h3>Paket Basic</h3>
+          <div class="harga">
+            <span class="currency">Rp</span>
+            <span class="amount">500.000</span>
+            <span class="period">/project</span>
+          </div>
+        </div>
+        <ul class="harga-features">
+          <li>Desain Responsif</li>
+          <li>5 Halaman Website</li>
+          <li>Form Kontak</li>
+          <li>Optimasi SEO Dasar</li>
+          <li>Dukungan 1 Bulan</li>
         </ul>
-        <a href="https://wa.me/qr/JIR4IIGQQYUBH1" class="btn-whatsapp" target="_blank">Pesan Sekarang</a>
+        <a href="#kontak" class="harga-btn">Pilih Paket</a>
       </div>
-      <div class="pricing-card">
-        <h3>Paket Profesional</h3>
-        <p class="price">Rp 1.500.000</p>
-        <ul>
-          <li>Multi Halaman</li>
-          <li>Admin Panel Sederhana</li>
-          <li>Integrasi WhatsApp</li>
+
+      <div class="harga-card featured">
+        <div class="harga-header">
+          <h3>Paket Professional</h3>
+          <div class="harga">
+            <span class="currency">Rp</span>
+            <span class="amount">1.500.000</span>
+            <span class="period">/project</span>
+          </div>
+        </div>
+        <ul class="harga-features">
+          <li>Desain Responsif Premium</li>
+          <li>10 Halaman Website</li>
+          <li>Form Kontak & Newsletter</li>
+          <li>Optimasi SEO Lengkap</li>
+          <li>Integrasi Media Sosial</li>
+          <li>Dukungan 3 Bulan</li>
         </ul>
-        <a href="https://wa.me/qr/JIR4IIGQQYUBH1" class="btn-whatsapp" target="_blank">Pesan Sekarang</a>
+        <a href="#kontak" class="harga-btn">Pilih Paket</a>
       </div>
-      <div class="pricing-card">
-        <h3>Paket Custom</h3>
-        <p class="price">Mulai Rp 2.500.000</p>
-        <ul>
-          <li>Desain & Fitur Sesuai Kebutuhan</li>
-          <li>Support Konsultasi</li>
-          <li>Garansi Revisi</li>
+
+      <div class="harga-card">
+        <div class="harga-header">
+          <h3>Paket Enterprise</h3>
+          <div class="harga">
+            <span class="currency">Rp</span>
+            <span class="amount">2.500.000</span>
+            <span class="period">/project</span>
+          </div>
+        </div>
+        <ul class="harga-features">
+          <li>Desain Custom Premium</li>
+          <li>Unlimited Halaman</li>
+          <li>Sistem Login User</li>
+          <li>Optimasi SEO Expert</li>
+          <li>Integrasi Payment Gateway</li>
+          <li>Dukungan 6 Bulan</li>
         </ul>
-        <a href="https://wa.me/qr/JIR4IIGQQYUBH1" class="btn-whatsapp" target="_blank">Pesan Sekarang</a>
+        <a href="#kontak" class="harga-btn">Pilih Paket</a>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="harga-faq">
+      <h2>Pertanyaan yang Sering Ditanyakan</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Berapa lama waktu pengerjaan?</h3>
+          <p>Waktu pengerjaan bervariasi tergantung kompleksitas proyek, mulai dari 1-4 minggu.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Apakah ada biaya tambahan?</h3>
+          <p>Biaya domain dan hosting tidak termasuk dalam paket. Kami akan membantu Anda memilih yang terbaik.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Bagaimana proses pembayaran?</h3>
+          <p>Pembayaran dilakukan dalam 2 tahap: 50% di awal dan 50% setelah website selesai.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Apakah bisa revisi desain?</h3>
+          <p>Ya, kami memberikan 3 kali revisi gratis untuk setiap paket.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="harga-contact">
+      <h2>Siap Memulai Proyek Anda?</h2>
+      <p>Hubungi kami sekarang untuk konsultasi gratis</p>
+      <form id="whatsapp-form">
+        <input type="text" id="nama" placeholder="Nama" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <select id="paket" required>
+          <option value="">Pilih Paket</option>
+          <option value="basic">Paket Basic</option>
+          <option value="professional">Paket Professional</option>
+          <option value="enterprise">Paket Enterprise</option>
+        </select>
+        <textarea id="pesan" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Jasa Pembuatan Website. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
