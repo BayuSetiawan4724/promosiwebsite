@@ -7,10 +7,10 @@ body {
   }
   
   header {
-    background: #1c05ee;
-    color: white;
+    background-color: #007bff;
     padding: 1em;
-    text-align: center;
+    color: white;
+    font-size: 20px;
   }
   
   nav {
@@ -19,6 +19,7 @@ body {
     gap: 1em;
     margin-top: 1em;   
     font-weight: bold;
+    font-size: 20px;
   }
   nav a {
     color: white;
@@ -26,6 +27,7 @@ body {
     padding: 0.5em;
     transition: background-color 0.3s, color 0.3s;
      border-radius: 5px;
+     font-weight: bold;
   }
   nav a:hover {
     background-color: white;
@@ -88,3 +90,269 @@ body {
     }
   }
   
+  /* Pricing Page Styles */
+  .harga-container {
+    padding-top: 80px;
+    background-color: #f8f9fa;
+  }
+  
+  .harga-hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .harga-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .harga-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease 0.3s;
+  }
+  
+  .harga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 5%;
+    margin-bottom: 4rem;
+  }
+  
+  .harga-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+  }
+  
+  .harga-card.featured {
+    transform: scale(1.05);
+    border: 2px solid #f1c40f;
+  }
+  
+  .harga-card.featured::before {
+    content: "POPULER";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f1c40f;
+    color: #2c3e50;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .harga-header {
+    margin-bottom: 2rem;
+  }
+  
+  .harga-header h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .harga {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .currency {
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .period {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .harga-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    text-align: left;
+  }
+  
+  .harga-features li {
+    padding: 0.8rem 0;
+    color: #2c3e50;
+    position: relative;
+    padding-left: 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .harga-features li:last-child {
+    border-bottom: none;
+  }
+  
+  .harga-features li:before {
+    content: "✓";
+    color: #f1c40f;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  .harga-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .harga-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .harga-faq {
+    padding: 4rem 5%;
+    background: white;
+  }
+  
+  .harga-faq h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .faq-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .faq-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-item p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .harga-contact {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+  }
+  
+  .harga-contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .harga-contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #whatsapp-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #whatsapp-form input,
+  #whatsapp-form select,
+  #whatsapp-form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  #whatsapp-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  #whatsapp-form button {
+    padding: 1rem 2rem;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  #whatsapp-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .harga-hero {
+      padding: 3rem 1rem;
+    }
+    
+    .harga-hero h2 {
+      font-size: 2rem;
+    }
+    
+    .harga-grid {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+    
+    .harga-card.featured {
+      transform: none;
+    }
+    
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .harga-contact {
+      padding: 3rem 1rem;
+    }
+  }
