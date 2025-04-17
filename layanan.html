@@ -3,49 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Layanan Kami</title>
-  <link rel="stylesheet" href="layanan..css" />
+  <title>Layanan - Jasa Pembuatan Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="layanan.css" />
 </head>
 <body>
   <header>
-    <h1>Layanan Kami</h1>
+    <h1>Jasa Pembuatan Website Profesional</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="layanan.html">Layanan</a>
-      <a href="portofolio.html">Portofolio</a>
       <a href="harga.html">Harga</a>
-      <a href="index.html#kontak">Kontak</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="#kontak">Kontak</a>
     </nav>
   </header>
 
-  <section>
-    <h2>Apa Saja yang Kami Tawarkan?</h2>
-    <div class="service-list">
-      <div class="service-card">
+  <main class="layanan-container">
+    <section class="layanan-hero">
+      <h2>Layanan Kami</h2>
+      <p>Kami menawarkan berbagai layanan pembuatan website profesional untuk kebutuhan bisnis Anda</p>
+    </section>
+
+    <section class="layanan-grid">
+      <div class="layanan-card">
+        <div class="layanan-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
         <h3>Website Toko Online</h3>
-        <p>Lengkap dengan keranjang belanja, pembayaran, dan dashboard admin.</p>
+        <p>Buat toko online profesional dengan fitur lengkap seperti keranjang belanja, pembayaran online, dan manajemen produk.</p>
+        <ul class="layanan-features">
+          <li>Desain Responsif</li>
+          <li>Sistem Pembayaran</li>
+          <li>Manajemen Produk</li>
+          <li>Laporan Penjualan</li>
+        </ul>
       </div>
-      <div class="service-card">
-        <h3>Website Pemesanan Makanan</h3>
-        <p>Pesan makanan online dengan sistem pre-order, notifikasi, dan tracking.</p>
-      </div>
-      <div class="service-card">
+
+      <div class="layanan-card">
+        <div class="layanan-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
         <h3>Website Pendidikan</h3>
-        <p>Sistem informasi sekolah, e-learning, pendaftaran online.</p>
+        <p>Platform pembelajaran online dengan fitur kelas virtual, materi digital, dan sistem penilaian.</p>
+        <ul class="layanan-features">
+          <li>Kelas Virtual</li>
+          <li>Materi Digital</li>
+          <li>Sistem Penilaian</li>
+          <li>Forum Diskusi</li>
+        </ul>
       </div>
-      <div class="service-card">
-        <h3>Company Profile</h3>
-        <p>Tampilkan bisnis atau brand kamu secara profesional di internet.</p>
+
+      <div class="layanan-card">
+        <div class="layanan-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3>Portofolio</h3>
+        <p>Website portofolio profesional untuk menampilkan karya dan pencapaian Anda.</p>
+        <ul class="layanan-features">
+          <li>Galeri Karya</li>
+          <li>Profil Singkat</li>
+          <li>Testimoni</li>
+          <li>Kontak</li>
+        </ul>
       </div>
-      <div class="service-card">
+
+      <div class="layanan-card">
+        <div class="layanan-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
         <h3>Landing Page</h3>
-        <p>Cocok untuk promosi produk digital, event, atau campaign iklan.</p>
+        <p>Halaman penjualan yang menarik dan konversi tinggi untuk produk atau layanan Anda.</p>
+        <ul class="layanan-features">
+          <li>Desain Menarik</li>
+          <li>Form Lead</li>
+          <li>Call-to-Action</li>
+          <li>Analytics</li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="kontak" class="layanan-contact">
+      <h2>Siap Memulai Proyek Anda?</h2>
+      <p>Hubungi kami sekarang untuk konsultasi gratis</p>
+      <form id="whatsapp-form">
+        <input type="text" id="nama" placeholder="Nama" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <select id="layanan" required>
+          <option value="">Pilih Layanan</option>
+          <option value="toko-online">Website Toko Online</option>
+          <option value="pemesanan-makanan">Pemesanan Makanan</option>
+          <option value="pendidikan">Website Pendidikan</option>
+          <option value="company-profile">Company Profile</option>
+          <option value="portofolio">Portofolio</option>
+          <option value="landing-page">Landing Page</option>
+        </select>
+        <textarea id="pesan" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Jasa Pembuatan Website. All rights reserved.</p>
   </footer>
+
+  <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
