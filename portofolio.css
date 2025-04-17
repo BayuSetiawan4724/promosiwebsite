@@ -21,6 +21,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
     padding: 0.5em;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
@@ -85,3 +86,289 @@ body {
     color: #0c0c0c;
   }
   
+  /* Portfolio Page Styles */
+  .portofolio-container {
+    padding-top: 80px;
+    background-color: #f8f9fa;
+  }
+  
+  .portofolio-hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .portofolio-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .portofolio-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease 0.3s;
+  }
+  
+  .portofolio-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    padding: 0 5%;
+  }
+  
+  .filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    color: #2c3e50;
+  }
+  
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: #f1c40f;
+    color: #2c3e50;
+  }
+  
+  .portofolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 5%;
+    margin-bottom: 4rem;
+  }
+  
+  .portofolio-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portofolio-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portofolio-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .portofolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portofolio-item:hover .portofolio-overlay {
+    opacity: 1;
+  }
+  
+  .portofolio-item:hover .portofolio-image img {
+    transform: scale(1.1);
+  }
+  
+  .portofolio-overlay h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .portofolio-overlay p {
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .portofolio-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #f1c40f;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .portofolio-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  .portofolio-testimonial {
+    padding: 4rem 5%;
+    background: white;
+  }
+  
+  .portofolio-testimonial h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .testimonial-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-content {
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-content p {
+    color: #666;
+    line-height: 1.6;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-author h4 {
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+  }
+  
+  .testimonial-author p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .portofolio-contact {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+  }
+  
+  .portofolio-contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .portofolio-contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #whatsapp-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #whatsapp-form input,
+  #whatsapp-form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  #whatsapp-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  #whatsapp-form button {
+    padding: 1rem 2rem;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  #whatsapp-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .portofolio-hero {
+      padding: 3rem 1rem;
+    }
+    
+    .portofolio-hero h2 {
+      font-size: 2rem;
+    }
+    
+    .portofolio-filter {
+      padding: 0 1rem;
+    }
+    
+    .portofolio-grid {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+    
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .portofolio-contact {
+      padding: 3rem 1rem;
+    }
+  }
